@@ -5,11 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura telefónica</title>
+    <link rel="icon" href="entel.ico">
 </head>
+<style type="text/css">
+table,th,td{
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+th,td{
+    padding:10px;
+}
+table{
+    background-color:honeydew;
+}
+td{
+    background-color:rgba(255, 182, 98, 0.37);
+}
+colgroup {
+background-color:rgba(103, 129, 255, 0.205);
+}
+
+
+</style>
+
+<script type="text/javascript" language="javascript">
+var txt="Entel - Factura detallada - Llamadas -";
+var espera=100;
+var refresco= null;
+function rotulo_title(){
+    document.title=txt;
+    txt=txt.substring(1,txt.length)+txt.charAt(0);
+    refresco=setTimeout("rotulo_title()",espera);
+}
+rotulo_title();
+</script>
+
 <body>
     <h1 style="color: darkblue;"><em>Entel S.A</em></h1>
-    <table border="1">
-        <caption> Factura detallada </caption>
+    <table border="1", style="width: 100%">
+        <caption style="font-size: larger;"> Factura detallada </caption>
+        <colgroup><col span="1"></colgroup>
         <thead>
             <tr>
                 <th colspan="5">Entel S.A - Marzo 2019</th>
@@ -95,5 +130,9 @@
             </tr>
         </thead>
     </table>
+    <article>
+        
+			<audio src="audio/cancion.mp3" controls="controls" preload="preload" autoplay="autoplay" loop="loop"></audio>
+    </article>
 </body>
 </html>
