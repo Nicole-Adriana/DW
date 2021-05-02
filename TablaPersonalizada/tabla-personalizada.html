@@ -34,7 +34,22 @@ caption{
     color:black;
     font-style: italic;
 }
+.elementos{
+    height: 100px;
+  width: 800px;
+  margin: 0.5 rem auto;
+  text-align:center;
+display: table;
 
+}
+.musica{
+    font-weight: 0;
+  font-size: 14px;
+  text-align:center;
+  display: table-cell;
+  padding-right: 200px;
+  position: absolute;
+}
 </style>
 
 <script type="text/javascript" language="javascript">
@@ -141,9 +156,15 @@ rotulo_title();
     </table>
     <br>
     <br>
-    <article>
-        
-			<audio src="audio/cancion.mp3" controls="controls" preload="preload" autoplay="autoplay" loop="loop"></audio>
-    </article>
+    <div class="elementos">
+        <div class="musica">
+            <article>
+                <img src="icono/bruno.gif", width="70%"><audio src="audio/cancion.mp3" controls="controls" preload="preload" autoplay="autoplay" loop="loop"></audio>
+            </article>
+        </div>
+    <br>
+    </div>
+    
+    
 </body>
 </html>
