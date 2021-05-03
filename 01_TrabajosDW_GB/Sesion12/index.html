@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+</head>
+<style  type="text/css">
+h2{
+    text-align:center;
+}
+</style>
+<body>
+    <div id="contenedor">
+    <h2>Encuesta de cine: Nominadas al Oscar 2018</h2>
+    <form id="formulario1" name="formulario1" method="post" action="data.php">
+        <fieldset id="datos_personales">
+         <legend>Datos Personales</legend>
+         <label for="nombre">Nombre</label><br>
+         <input type="text" name="nombre" id="nombre"><br>
+         <label for="apellido">Apellido</label><br>
+         <input type="text" name="apellido" id="apellido"><br>
+         <label for="dni">DNI</label><br>
+         <input type="text" name="dni" id="dni"><br>
+         <label for="edad">Edad</label><br>
+         <input type="text" name="edad" id="edad"><br>
+         <label for="sexo">Sexo</label><br>
+         <select name="listaSexo" >
+            <option>Femenino</option>
+            <option>Masculino</option>
+         </select>
+        </fieldset>
+        <fieldset id="mejor_película">
+            <legend>Mejor Película</legend>
+            <input type="radio" name="película" value="11"> Call Me Be Your Name <br>
+            <input type="radio" name="película" value="22"> Dunkerque<br>
+            <input type="radio" name="película" value="33"> Déjame Salir <br>
+
+        </fieldset>
+        <fieldset id="Selecciona las películas que no hayas visto">
+            <legend>Mejor Película</legend>
+            <input type="checkbox" name="película" value="11"> Call Me Be Your Name <br>
+            <input type="checkbox" name="película" value="22"> Dunkerque<br>
+            <input type="checkbox" name="película" value="33"> Déjame Salir <br>
+            <input type="checkbox" name="película" value="44"> If I stay <br>
+
+        </fieldset>
+        <fieldset id="grupo_argumento">
+            <legend>Argumento de tu película preferida</legend>
+            <textarea name="argumento" id="argumento" cols="50" rows="14"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value="Borrar Formulario"> <input type="submit" value="Enviar">
+    </form>
+    </div>
+    
+</body>
+</html>
