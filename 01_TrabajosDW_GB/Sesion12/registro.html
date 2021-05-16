@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 
 <style type="text/css">
@@ -52,7 +52,7 @@ display: table;
     float: left;
     vertical-align: middle;
     display: table-cell;
-    padding: 20px;
+    padding: 10px 200px;
     font-size: 16px;
 }
 .ultimobtn{
@@ -62,33 +62,8 @@ display: table;
     position:relative;
     top:50%; 
     left:50%;
-}
-.boton{
-  width: 500px;
-  height: 20px;
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  
-text-shadow: 3px 2px 1px #9daef5;
-  -webkit-box-shadow: 6px 5px 24px #666666;
-  -moz-box-shadow: 6px 5px 24px #666666;
-  box-shadow: 6px 5px 24px #666666;
-
-font-family: Arial;
-  color: #fafafa;
-  font-size: 16px;
-  padding: 19px;
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 200%;
-  transform: translateX(-60%);
+    margin-left: 15%;
+  transform: translateX(-100%);
 }
 .boton:hover {
 
@@ -102,6 +77,18 @@ background-image: -o-linear-gradient(top, #da9843 #eb94d0);
 background-image: linear-gradient(to bottom, #da9843, #eb94d0);
 text-decoration: none;
 }
+.botonF:hover {
+
+background: #da9843;
+
+
+background-image: -webkit-linear-gradient(top, #434dda, #94ebe7);
+background-image: -moz-linear-gradient(top, #434dda, #94ebe7);
+background-image: -ms-linear-gradient(top, #434dda, #94ebe7);
+background-image: -o-linear-gradient(top, #434dda #94ebe7);
+background-image: linear-gradient(to bottom, #434dda, #94ebe7);
+text-decoration: none;
+}
 </style>
 
 <body>
@@ -111,7 +98,7 @@ text-decoration: none;
                 <h1>Nuevo Usuario</h1>
             </section>
             <form id="formulario1" name="formulario1" method="post" action="data.php">
-                <input type="submit" value="Registro con Facebook"> <input type="submit" value="Registro de Google"><br>
+                <input type="submit" value="Registro con Facebook" class="botonF"> <input type="submit" value="Registro de Google" class="boton"><br>
                 <br>
         </div>
         <h2 style="text-align-last: center;">O registrarse con</h2>
@@ -126,7 +113,7 @@ text-decoration: none;
             <br>
             <br>
             <div class="ultimobtn">
-                <a href="" class="boton" style="width: 100px;">Enviar</a> 
+                <input type="submit" name="enviar" id="enviar" class="boton">
             </div>
             <br>
         </div>
