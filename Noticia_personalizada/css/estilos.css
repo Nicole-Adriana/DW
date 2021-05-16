@@ -47,6 +47,7 @@ top: 8em;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+
 }
 
 .menu li a:hover{
@@ -54,3 +55,34 @@ top: 8em;
     transition: all.3s;
 }
 
+header{
+    box-sizing: border-box; 
+    margin: -25px -6px; 
+    padding: 6px;
+
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+#caja3 h4{
+    margin-top: -8px;
+    font-size: 20px;
+}
+
+#caja3 p{
+    text-align: justify;
+    padding: 10px;
+}
+#caja4{
+    float: right;
+    padding: 10px;
+}
+
+#caja5{
+    background-color: red;
+    float: right;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
