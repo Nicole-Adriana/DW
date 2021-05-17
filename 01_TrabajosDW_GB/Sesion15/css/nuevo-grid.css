@@ -5,9 +5,9 @@
     display: grid;
     margin: 0px auto;
     max-width: 100%;
-    max-height: 100vh;
+    min-height: 100vh;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 200px 50vh 100px;
+    grid-template-rows: 200px 1frh 100px;
     grid-template-areas: 
     "my-header my-header my-header" 
     "my-nav my-section my-aside"
@@ -39,3 +39,4 @@ footer {
     grid-area: my-footer;
     background-color: darkorchid;
 }
+
