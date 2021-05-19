@@ -5,25 +5,28 @@
     display: grid;
     max-width: 100%;
     min-height: 100vh;
-    grid-template-columns: 20% 65% 25%;
-    grid-template-rows: 30% 55% 25% ;
+    grid-template-columns: 10% 15% 55% 20%;
+    grid-template-rows: 20%  55% 30%;
     grid-template-areas: 
-    "my-nav my-header my-header" 
-    "my-section my-section my-aside"
-     "my-footer my-footer my-footer"; 
+    "my-nav imagen my-header my-header" 
+    "my-main my-main my-main my-aside"
+    "my-footer my-footer my-footer my-footer";
 }
 aside {
     grid-area: my-aside;
-    background-color: rgb(104, 245, 255);
+    background-color: cyan;
     
 }
-
+.imagen-inicio{
+    grid-area: imagen;
+}
 .menu{
+    grid-area: my-nav;
     background-color: rgb(0, 158, 179);
 }
 
-section {
-    grid-area: my-section;
+main{
+    grid-area: my-main;
     background-color: darkkhaki;
    
 }
@@ -31,10 +34,107 @@ section {
 footer {
     grid-area: my-footer;
     background-color: rgb(0, 158, 179);
+
         
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: rgb(0, 158, 179);
+    display: flex;
+    width: 80%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: black;
+}
+.contenido-texto-card li a{
+    color:black;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
 }
 header {
     grid-area: my-header;
     background-color:  rgb(0, 158, 179);
     
 }
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 0% auto;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  .menu a{
+    display: block;
+    height: 40px;
+    padding: 2px;
+    margin: 2px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* .web-master{
+    background-color: black;
+    margin-top: -16px;
+} */
+
+/* .FInfoContacto{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 1430px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.FSiguenosEn{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 900px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.FEnlaceInteres{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 450px;
+    font-size: 15px;
+    font-family: Verdana
+}
+
+.FMenu{
+    float: right;
+    position: relative;
+    bottom: -15px;
+    right: 0px;
+    font-size: 15px;
+    font-family: Verdana
+}
+   */
+/* .FInfoContacto .FSiguenosEn .FEnlaceInteres .FMenu {
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+} */
