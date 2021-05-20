@@ -214,7 +214,7 @@ footer {
 @media(min-width:1001px){
     .grid {
     grid-template-columns: 10% 1fr 25%;
-    grid-template-rows: 17.5%  1fr 25% ;
+    grid-template-rows: 20%  1fr 25% ;
     grid-template-areas: 
     "my-nav my-header my-header" 
     "my-section my-section my-aside"
@@ -231,7 +231,8 @@ footer {
     border-radius: 4px;
     font-family: 'calibri';
     color: rgb(10, 10, 10);
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #000; 
+    float: left;
   }
   
   .form-register h4 {
@@ -295,4 +296,17 @@ footer {
 }
 .mapa{
     float: right;
+}
+
+.imgUbic{
+    margin-left: 50%;
+    margin-top: -10%;
+    border: black dashed;
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin: 20px;
+}
+.contenido{
+width: 1000px;
 }
