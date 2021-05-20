@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contactos.css">
-    <title>Document</title>
+    <title>Mi sitio web</title>
 </head>
+<script type="text/javascript" language="javascript">
+    var txt="Mi sitio Web - Nicole Bravo -";
+    var espera=100;
+    var refresco= null;
+    function rotulo_title(){
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);
+    }
+    rotulo_title();
+</script>
 <body>
     <main class="grid">
 

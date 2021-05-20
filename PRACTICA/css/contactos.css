@@ -209,6 +209,7 @@ footer {
         "my-nav my-header my-header" 
         "my-section my-section my-aside"
         "my-footer my-footer  my-footer";
+        overflow: hidden;
     }
 }
 @media(min-width:1001px){
@@ -219,6 +220,7 @@ footer {
     "my-nav my-header my-header" 
     "my-section my-section my-aside"
      "my-footer my-footer my-footer";
+     overflow: hidden;
     }
 }
 
