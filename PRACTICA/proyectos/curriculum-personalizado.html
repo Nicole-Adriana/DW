@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cv</title>
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="icon" href="imagenes/yo.ico">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<script type="text/javascript" language="javascript">
+    var txt="Mi Curriculum Vitae - Nicole Bravo-";
+    var espera=100;
+    var refresco= null;
+    function rotulo_title(){
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);
+    }
+    rotulo_title();
+    </script>
+
+<body>
+    <div class="general">
+        <br>
+        <div class="titulo_nombre">
+            <img src="imagenes/yo.png" align="Absbottom"> <h1>Nicole Adriana Bravo Hidalgo</h1>
+        </div>
+        <br>
+        <div class="cuadro_menu">
+            <div class="menu">
+                <a href="#perfil">  &nbsp Perfil</a><br>
+                <a href="#experiencia">  &nbsp Experiencia profesional</a><br>
+                <a href="#habilidades"> &nbsp Habilidades y conocimientos</a><br>
+                <a href="#cursos"> &nbsp Educación</a><br>
+                <a href="#idiomas"> &nbsp Idiomas</a>
+                <br>
+            </div>
+        </div>
+        
+        <br>
+        <hr>
+        <div class="datos">
+            <div class="datos_box">
+                <u1>
+                    <li><strong>Ciudad: </strong>Chiclayo &nbsp &nbsp</li>
+                    <li><strong>Teléfono: </strong>785485958 &nbsp &nbsp</li>
+                    <li><strong>Fecha de Nacimiento: </strong>30/10/2001 &nbsp &nbsp</li>
+                    <li><strong>Email: </strong>nicolebh@gmail.com &nbsp &nbsp</li>
+                </u1>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="titulo">
+            <div class="about_me">
+                <h2 id="perfil">Perfil</h2>
+                <p> Profesional dedicado al Área de sistemas, Especializado en la programación con Javascript, he trabajado en más de 50 proyectos, 
+                    tanto a nivel nacional como internacional, trabajando con equipos de más de 10 personas, tanto en español como en inglés. 
+                    Presento gran facilidad para el trabajo en equipo y bajo presión, gran responsabilidad y amplio dominio en varios programas 
+                    de aplicación como de programación de diseño Web y diseño Gráfico. En linux como Windows.</p>   
+            </div>
+        </div>
+        <hr>  
+<h3 id="experiencia">Experiencia profesional</h3>
+<table border="2", style="width: 80%", align="center" >
+    <thead>
+        <tr>
+            <th>Empresa / Organización</th>
+            <th>Cargo</th>
+            <th>Localización</th>
+            <th>Desde-hasta</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>USAT</td>
+            <td>Tutora Par</td>
+            <td>Chiclayo</td>
+            <td>Abril 2019 - Junio 2019</td>
+        </tr>
+        <tr>
+            <td>Precious Jewel</td>
+            <td>Marketing</td>
+            <td>Chiclayo</td>
+            <td>Enero 2020 - Febrero 2020</td>
+        </tr>
+        <tr>
+            <td>Cevichería "Pez Loco"</td>
+            <td>Mesera</td>
+            <td>Chiclayo</td>
+            <td>Febrero 2020 - Abril 2020</td>
+        </tr>
+        <tr>
+            <td>Pastelería ""</td>
+            <td>Repostería y diseño</td>
+            <td>Chiclayo</td>
+            <td>Febrero 2021 - Abril 2021</td>
+        </tr>
+       
+    </tbody>
+</table>
+<br>
+<hr>
+<div class="lista_habi">
+    <h3 id="habilidades">Habilidades y conocimientos</h3>
+    <div class="habilidades_conteo">
+        <u1>
+            <li><strong>Desarrollo web: </strong>HTML5, CSS3, MySQL, responsitive design.</li>
+            <li><strong>Analitica web/Métricas: </strong>Google Analytics.</li>
+            <li><strong>Emprendimiento: </strong>Startups, Learn Startup.</li>
+            <li><strong>Aplicaciones Ofimáticas: </strong>Microsoft Office.</li>
+            <li><strong>Marketing: </strong>Email marketing, Redes Sociales, Graficación.</li>
+            <br>
+        </u1>
+    </div>
+    
+</div>
+
+<br>
+<hr>  
+<h3 id="cursos">Otros Cursos</h3>
+<table border="2", style="width: 80%", align="center">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Entidad</th>
+            <th>Condición</th>
+            <th>Año</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>"El OSIPTEL, aspectos técnicos del mercado de las telecomunicaciones, conoce el sector y tus derechos"</td>
+            <td>OSIPTEL</td>
+            <td>Estudiante</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>Inspiring Study Conference with Google</td>
+            <td>Google</td>
+            <td>Estudiante</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>Productividad Personal en la Era Digital </td>
+            <td>Google Actívate</td>
+            <td>Estudiante</td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>Google Science Fair</td>
+            <td>Google</td>
+            <td>Participante</td>
+            <td>2018</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<div class="idiomas">
+
+    <h2 id="idiomas">IDIOMAS</h2>
+    <hr>
+     <h3>Inglés</h3>
+     <progress max="100" value="90">20%</progress>
+     <h3>Italiano</h3>
+     <progress max="100" value="20">20%</progress>
+     <h3>Español</h3>
+     <progress max="100" value="100">20%</progress>
+     <br>
+     <br>
+     <br>
+</div>
+<article>
+    <audio src="audio/musica.mp3" controls="controls" preload="preload" autoplay="autoplay" loop="loop"></audio>
+ </article>
+</body>
+</html>
