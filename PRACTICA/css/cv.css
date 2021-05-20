@@ -222,7 +222,7 @@ footer {
 @media(min-width:1001px){
     .grid {
     grid-template-columns: 10% 1fr 25%;
-    grid-template-rows: 16%  1fr 20% ;
+    grid-template-rows: 16.5%  1fr 20% ;
     grid-template-areas: 
     "my-nav my-header my-header" 
     "my-section my-section my-aside"
