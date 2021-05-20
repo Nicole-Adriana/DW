@@ -204,12 +204,11 @@ footer {
 @media(min-width:600px) and (max-width:1000px){
     .grid{
         grid-template-columns: 20% 65% 25%;
-        grid-template-rows: 27.7%  55% 25%;
+        grid-template-rows: 27.7%  1fr 25%;
         grid-template-areas: 
         "my-nav my-header my-header" 
         "my-section my-section my-aside"
         "my-footer my-footer  my-footer";
-        overflow: hidden;
     }
 }
 @media(min-width:1001px){
@@ -220,7 +219,6 @@ footer {
     "my-nav my-header my-header" 
     "my-section my-section my-aside"
      "my-footer my-footer my-footer";
-     overflow: hidden;
     }
 }
 
@@ -229,7 +227,7 @@ footer {
     background: cyan;
     padding: 10px;
     margin: 10px;
-    margin-top: 10px;
+    margin-top: 10px; 
     border-radius: 4px;
     font-family: 'calibri';
     color: rgb(10, 10, 10);
@@ -238,7 +236,7 @@ footer {
   }
   
   .form-register h4 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
     font-family: 'Pangolin', cursive;
     letter-spacing: 0.2em;
@@ -250,7 +248,7 @@ footer {
     background: rgb(0, 158, 179);
     padding: 10px;
     border-radius: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     border: 1px solid #24babc;
     font-family:'calibri';
     font-size: 18px;
@@ -285,30 +283,30 @@ footer {
     font-size: 16px;
     margin-bottom: auto;
   }
-  img{
+  /* img{
     width: 30px;
     padding:0 5px;
     margin-top: -10px;
 }
-.botons:hover {
 
-    background: #eaef9b;
-    color:black;
-    text-decoration: none;
-}
 .mapa{
     float: right;
-}
+} */
 
 .imgUbic{
     margin-left: 50%;
     margin-top: -10%;
     border: black dashed;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     float: right;
     margin: 20px;
 }
-.contenido{
-width: 1000px;
+
+.botons:hover {
+
+    background: #eaef9b;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
 }

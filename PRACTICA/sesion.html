@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sesion.css">
+    <title>Mi sitio Web</title>
+</head>
+<script type="text/javascript" language="javascript">
+    var txt="Mi sitio Web - Nicole Bravo -";
+    var espera=100;
+    var refresco= null;
+    function rotulo_title(){
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);
+    }
+    rotulo_title();
+</script>
+<body>
+    <main class="grid">
+
+        <nav class="menu" >
+            <a class="botones" href="index.html" style="text-decoration: none; ">Inicio</a>
+            <a class="botones" href="curriculum.html" style="text-decoration: none;">Curriculum</a>
+            <a class="botones" href="proyectos.html" style="text-decoration: none;">Proyectos</a>
+            <a class="botones" href="contactos.html" style="text-decoration: none;">Contactos</a>
+        </nav>
+        <header>
+            <div class="foto">
+                <img height="100%" src="img/yo.png" alt="Usuario" class="Usuario">
+            </div>
+            <div class="titulo" >
+                <h1>NICOLE ADRIANA BRAVO HIDALGO</h1>
+            </div>
+            <div class="subtitulo">
+                <p>Mi web Personal</p>
+            </div>
+            <div class="iniciarSesion" >
+                <p > <b><a href="sesion.html">Iniciar Sesión</a></b></p>
+            </div>
+            
+
+        </header>
+        <section>
+        <div class="form-register">
+
+                <h4 style="text-align: center;">Inicio de Sesión</h4>
+                <hr>
+                <br>
+                <label for="Usuario">Usuario</label><br>
+                <input class="controls" type="text" name="Usuario" id="usuario"><br>
+                <input class="botons" type="submit" value="Ingresar">
+                <a style="margin-left: 68%; " href="">¿ Olvidaste tu contraseña ?</a>
+                <label for="Contraseña">Contraseña</label><br>
+                <input class="controls" type="password" name="Contraseña" id="Contraseña"><br>
+
+                <div class="nuevoUsuario">
+                    <p >Nuevo Usuario</p>
+                    <br>
+                </div>
+
+                <input class="botons" type="submit" value="Registrarse">
+
+        </div>
+    </section>
+        <aside>
+                <br>
+                <div class="contenedor">
+                    <h2 class="titulo"></h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="contenido-texto-card">
+                                <h4>Menú</h4>
+                                <li><a href="" style="text-decoration: none;">Inicio</a></li>
+                                <li><a href="" style="text-decoration: none;">Tienda Virtual</a></li>
+                                <li> <a href="" style="text-decoration: none;">Nosotros</a></li>
+                                <li><a href="" style="text-decoration: none;">Servicios</a></li>
+                                <li><a href="" style="text-decoration: none;">Staff</a></li>
+                                <li>  <a href="" style="text-decoration: none;">Contactos</a></li>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="contenedor">
+                    <h2 class="titulo"></h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="contenido-texto-card">
+                                <h4>Enlaces de Interés</h4>
+                                <li> <a href="" style="text-decoration: none;">Item1</a></li>
+                                <li><a href="" style="text-decoration: none;">Item2</a></li>
+                                <li> <a href="" style="text-decoration: none;">Item3</a></li>
+                                <li> <a href="" style="text-decoration: none;">Item4</a></li>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </aside>
+           
+        <footer>
+            <div style="height: 80%;">
+                <img src="img/yo.png" alt=""
+                    style="width: 100px; margin-left: 30px; margin-top: 15px;">
+
+                <div class="Info">
+                    <h4 style="font-family: Verdana; text-align: center;">Información de Contacto</h4>
+                    <br>
+                <ul>
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03</li>
+                    <li>Item 04</li>
+                </ul>
+                </div>
+
+                <div class="Siguenos">
+                    <h4 style="font-family: Verdana; text-align: center;">Siguenos en</h4>
+                    <br>
+                <ul>
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03</li>
+                    <li>Item 04</li>
+                </ul>
+                </div>
+
+                <div class="Enlace">
+                    <h4 style="font-family: Verdana; text-align: center;">Enlace de Interés</h4>
+                    <br>
+                <ul>
+                    <li>Item 01</li>
+                    <li>Item 02</li>
+                    <li>Item 03</li>
+                    <li>Item 04</li>
+                </ul>
+                </div>
+
+                <div class="MenuF">
+                    <h4 style="font-family: Verdana; text-align: center;">Menú</h4>
+                    <br>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Curriculum</li>
+                    <li>Proyectos</li>
+                    <li>Contactos</li>
+                </ul>
+                </div>
+            </div>
+
+            <div style="background-color: black; height: 20%;">
+                <h1 style="color: white; text-align: center; font-size: 20px">Webmaster: Nicole Adriana Bravo Hidalgo </h1>
+            </div>
+        </footer>
+
+
+
+    </main>
+</html>

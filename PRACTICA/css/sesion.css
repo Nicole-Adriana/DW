@@ -53,12 +53,11 @@ header {
     "my-nav" "my-section" "my-aside"
     "my-footer"; */
     grid-template-columns: 100%;
-    grid-template-rows: 5% 1fr 68% 1fr 10% 90%;
+    grid-template-rows: 10% 1fr 40% 1fr 10% 90%;
     grid-template-areas: 
     "my-header" 
     "my-nav" "my-section" "my-aside"
     "my-footer";
-
 }
 aside {
     grid-area: my-aside;
@@ -199,73 +198,9 @@ footer {
     bottom: -15px;
     right: 40px;
     font-size: 15px;
-    font-family: Verdana
+    font-family: Verdana;
 }
 
-.portafolio{
-    background: #f2f2f2;
-}
-
-.galeria-port{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.imagen-port{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); 
-}
-
-.imagen-port > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.hover-galeria{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(273,91%,27%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img{
-    width: 50px;
-}
-
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
-}
-
-.contenedor .titulo{
-margin-top: 20px;
-text-align: center;
-padding: 20px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin-right: -100px;
-text-decoration: underline;
-}
-
-.imagen-port h3 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 @media(min-width:600px) and (max-width:1000px){
     .grid{
         grid-template-columns: 20% 65% 25%;
@@ -275,49 +210,94 @@ text-decoration: underline;
         "my-section my-section my-aside"
         "my-footer my-footer  my-footer";
     }
-    .imagen-port{
-        width: 44%;
-    }
-/* 
-    .cards{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cards .card{
-        width: 90%;
-    }
-
-    .cards .card:first-child{
-        margin-bottom: 30px;
-    } */
-
 }
 @media(min-width:1001px){
     .grid {
     grid-template-columns: 10% 1fr 25%;
-    grid-template-rows: 18.5%  1fr 23% ;
+    grid-template-rows: 26%  60% 25%;
     grid-template-areas: 
     "my-nav my-header my-header" 
     "my-section my-section my-aside"
-     "my-footer my-footer my-footer";
+    "my-footer my-footer my-footer";
     }
 }
-@media screen and (max-width:500px){
-    .imagen-port{
-        width: 85%;
-    }
 
-    /* .cards .card{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+     .form-register {
+        width: 70%;
+        background: rgb(2, 2, 2);
+        padding: 30px;
+        margin: auto;
+        margin-top: 10px; 
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+        box-shadow: 7px 13px 37px #000; 
+      }
+    .contenidoInicioSesion{
+        padding: 2%;
     }
+    
+    #usuario{
+        margin: 2%;
+        margin-right: 2%;
+        width: 50%;    
+        height: 20px;
+        
+    }
+    
+    .botons{
+        
+        width: 20%;
+        height: 35px;
+        margin-top: -900px;
+        margin-left: 70%;
+        cursor: pointer;
+        border-radius: 7%;
+        background: #4e3188;
+        border: none;
+        padding: 12px;
+        color: white;
+        font-size: 16px;
+        margin-bottom: auto;
+    }
+    
+    #Contraseña{
+        margin: 2%;
+        margin-right: 2%;
+        width: 50%;    
+        height: 20px;
+        
+    }
+    .nuevoUsuario{
+        margin-top: -8%;
+        margin-left: 470px;
+    }
+    
+    .form-register h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        font-family: 'Pangolin', cursive;
+        letter-spacing: 0.2em;
+        word-spacing: 0.25em;
+      }
 
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    } */
-}
+      .botons:hover {
+
+        background: #eaef9b;
+        color:black;
+        text-decoration: none;
+        cursor: pointer;
+    } 
+    .controls {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: white; 
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff
+      }
