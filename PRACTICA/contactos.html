@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/sol.png">
     <link rel="stylesheet" href="css/contactos.css">
     <title>Mi sitio web</title>
 </head>
@@ -43,6 +44,7 @@
         </header>
 
         <section class="contenido-contactos">
+            <form action="data.php">
             <div class="form-register">
                 <h4 style="text-align: center;">Para Comunicarse Conmigo</h4>
                 <label for="nombre">Nombre</label><br>
@@ -53,16 +55,13 @@
                 <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
                 <label for="nombre">Mensaje</label><br>
                 <textarea class="controls" name="mensaje" id="mensaje" cols="100%" rows="2"></textarea>
-
-                <input class="botons" type="submit" value="Limpiar"><input class="botons" type="submit" value="Enviar">
+                <input class="botons" type="reset" value="Limpiar"><input class="botons" type="submit" value="Enviar">
             </div>
             <div class="imgUbic">
                 <h1>Ubicación</h1>
                 <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0777903981775!2d-79.86522188585685!3d-6.7603689679850385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceeeffd190ddd%3A0xce387ae6229aa09e!2sUSAT!5e0!3m2!1ses-419!2spe!4v1621547350077!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            
-            
-        
+           </form>
         </section>
         <aside>
                 <br>

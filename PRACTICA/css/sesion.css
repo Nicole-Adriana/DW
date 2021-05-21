@@ -204,6 +204,7 @@ footer {
 
      .form-register {
         width: 70%;
+        height: 90%;
         background: rgb(2, 2, 2);
         padding: 30px;
         margin: auto;
@@ -222,34 +223,27 @@ footer {
         margin-right: 2%;
         width: 50%;    
         height: 20px;
-        
     }
     
     .botons{
-        
-        width: 20%;
-        height: 35px;
-        margin-top: -900px;
-        margin-left: 70%;
-        cursor: pointer;
-        border-radius: 7%;
-        background: #4e3188;
-        border: none;
-        padding: 12px;
-        color: white;
-        font-size: 16px;
-        margin-bottom: auto;
+    width: 54%;
+    background: #4e3188;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    margin-bottom: auto;
     }
-    
+
     #Contraseña{
         margin: 2%;
         margin-right: 2%;
         width: 50%;    
         height: 20px;
-        
     }
     .nuevoUsuario{
-        margin-top: -8%;
+        margin-top: -30%;
         margin-left: 470px;
     }
     
