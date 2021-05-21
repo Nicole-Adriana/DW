@@ -4,21 +4,24 @@
     box-sizing: border-box;
 }
 
-/* header{
-    width: 100%;
-    height: 100px;
-    background-color: cyan;
-    color: black;
-    position: fixed; 
-    top: 0%;
-    left: 0%;
-    z-index: 100;
-} */
-
 header {
     grid-area: my-header;
     background-color:  rgb(0, 158, 179);
     
+}
+.foto{
+    width:"150px";
+    height:"170px"
+}
+section h3{
+    margin-top: 0px;
+    padding: 0px 10px;
+}
+.tamaño{
+    margin-top: 0px;
+}
+.tamaño h4{
+    padding: 0px 10px;
 }
 .contenedor{
     width: 98%;
@@ -29,29 +32,11 @@ header {
 }
 
 .grid {
-    /* max-width: 100%;
-    min-height: 100vh;
-    margin: 0% auto;
-    display: grid;
-    max-width: 100%;
-    min-height: 100vh;
-    grid-template-columns: 20% 65% 25%;
-    grid-template-rows: 30% 55% 25% ;
-    grid-template-areas: 
-    "my-nav my-header my-header" 
-    "my-section my-section my-aside"
-     "my-footer my-footer my-footer"; */
 
     display: grid;
     margin: 0px auto;
     max-width: 100%;
     min-height: 100vh;
-    /* grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 1fr 100px 50px;
-    grid-template-areas: 
-    "my-header" 
-    "my-nav" "my-section" "my-aside"
-    "my-footer"; */
     grid-template-columns: 100%;
     grid-template-rows: 10% 1fr 40% 1fr 10% 90%;
     grid-template-areas: 
@@ -77,8 +62,7 @@ section {
 
 footer {
     grid-area: my-footer;
-    background-color: rgb(0, 158, 179);
-        
+    background-color: rgb(0, 158, 179);     
 }
 .menu a{
     display: block;
@@ -88,17 +72,27 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    text-decoration: none;
 }
-#caja5{
+#imagen-noticia{
     padding: 10px;
     float: left;
     margin: 20px;
+    width:150px; 
+    height:100px;  
 
+}
+.footer{
+    height: 80%;
+}
+.footer-yo{
+    width: 100px; 
+    margin-left: 30px; 
+    margin-top: 15px;
 }
 .noticia-texto{
     padding: 30px;
     text-align: justify;
-    /* margin: 20px; */
 }
 
 .cards{
@@ -192,7 +186,7 @@ footer {
     font-family: Verdana
 }
 
-.MenuF{
+.Menu{
     float: right;
     position: relative;
     bottom: -15px;
@@ -200,7 +194,15 @@ footer {
     font-size: 15px;
     font-family: Verdana
 }
-
+.webMaster{
+    background-color: black; 
+    height: 20%;
+}
+.webMaster h1{
+    color: white; 
+    text-align: center; 
+    font-size: 20px;
+}
 @media(min-width:600px) and (max-width:1000px){
     .grid{
         grid-template-columns: 20% 65% 25%;
