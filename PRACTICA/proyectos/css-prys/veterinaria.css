@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+}
+
+header .textos-header{
+    display: flex;
+    height: 160px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    color: gray;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -320px;
+    margin-left: 100px;
+    }
+.textos-header h2{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 100px;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+}
+/* .menu{
+    background-position: center;
+    margin: auto;
+} */
+
+/* .textos-header h1{
+    font-size:50px;
+    margin-top: -320px;
+}
+
+.textos-header h2{
+    font-size: 30px;
+}
+.imagen{
+    margin-top: 25px;
+    margin-left: 100px;
+} */
+
+.grid{
+    display: grid;
+    margin: 0px auto;
+    max-width: 100%;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 1fr 40% 1fr 10% 90%;
+    grid-template-areas: 
+    "my-header" 
+    "my-nav" "my-section" "my-aside"
+    "my-footer";
+}
+.menu a{
+    display: block;
+    height: 40px;
+    padding: 2px;
+    margin: 2px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+header {
+    grid-area: my-header;
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: rgb(111, 116, 126);
+}
+
+
+aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+
+section {
+    grid-area: my-section;
+    background-color: rgb(172, 142, 194);
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+}
+
+.texto-vet{
+    padding: 10px;
+    text-align: justify;
+}
+
+.tamaño{
+    padding: 10px;
+}
+.imagen-texto{
+    /* width: 40px;
+    height: 40px; */
+    padding: 5px;
+    float: left;
+    margin: 10px;
+    width:40px; 
+    height:40px;  
+}
+
+ @media(min-width:600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: 
+        "my-header my-header" 
+        "my-nav my-nav" "my-aside my-section "
+        "my-footer my-footer";
+    }
+} 
+
+@media(min-width:1001px){
+    .grid {
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 25% 1fr 10%;
+        grid-template-areas: 
+        "my-header my-header my-header" 
+        "my-nav my-section  my-aside"
+        "my-footer my-footer my-footer";
+    }
+    .textos-header h1{
+        font-size:50px;
+        margin-top: -320px;
+    }
+
+    .textos-header h2{
+        font-size: 30px;
+    }
+    .imagen{
+        margin-top: 25px;
+        margin-left: 100px;
+    }
+    .menu{
+        margin-top: 80px;
+    }
+
+    .texto-vet{
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .tamaño{
+        padding: 20px;
+    }
+    
+    .imagen-texto{
+        /* width: 40px;
+        height: 40px; */
+        padding: 5px;
+        float: left;
+        margin: 10px;
+        width:80px; 
+        height:80px;  
+    }
+    .contenido{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .grid{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px 50px 1fr 100px;
+        grid-template-areas: 
+        "my-header my-header" 
+        "my-nav my-nav" "my-aside my-section "
+        "my-footer my-footer";
+    }
+    .textos-header h1{
+        font-size:20px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+}
+/* 
+@media screen and (max-width:500px){
+
+    .textos-header h1{
+        font-size:20px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+} */
