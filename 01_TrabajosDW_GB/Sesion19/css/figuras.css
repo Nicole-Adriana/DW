@@ -1,4 +1,9 @@
-.cuadrado{
+body{
+    overflow: hidden;
+}
+/* FIGURAS */
+
+/* .cuadrado{
     width: 100px;
     height: 100px;
     background-color: red;
@@ -36,7 +41,7 @@ border-top: 50px solid blue;
 border-right: 50px solid yellow;
 border-bottom: 50px solid green;*/
 
-.circulo1{
+/* .circulo1{
     width: 100px;
     height: 100px;
     background-color: red;
@@ -61,4 +66,58 @@ border-bottom: 50px solid green;*/
     background-color: red;
     margin-left: 20px;
     clip-path: polygon(25% 0, 75% 0, 100% 25%,50% 100%, 0 25%);
+}  */
+
+/*IMAGEN
+
+/* .animado{
+    margin-left: 10px;
+    width: 50%;
+    transition: all 1s;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+}
+
+.animado:hover{
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%,0 50%);
+} */
+
+/* TEXTO */
+
+p{
+    /* animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: 5s infinite alternate slidein;
+}
+
+@keyframes slidein{
+    /* from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    } */
+
+    0% {
+     margin-left: 100%;
+     width: 300%;
+    }
+
+    30%{
+      background-color: burlywood;
+    }
+    60%{
+       background-color: cornflowerblue;
+    }
+    90%{
+      background-color: crimson;
+    }
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
 }
