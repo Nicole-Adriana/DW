@@ -1,0 +1,13 @@
+.row{
+    background-color: rgb(230, 222, 222);
+    margin: 20px;
+    text-align: center;
+}
+/* .col{
+    border: rgb(189, 176, 176) solid 1px;
+    padding: 10px;
+} */
+div[class ^= "col"]{
+    border: rgb(189, 176, 176) solid 1px;
+    padding: 10px;
+}
