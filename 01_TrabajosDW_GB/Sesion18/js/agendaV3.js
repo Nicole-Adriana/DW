@@ -43,9 +43,9 @@ function actualizarDatos(){
     } else{
         for (var i = 0; i<=localStorage.length-1; i++ ){
             var key = localStorage.key(i);
-            registro += '<li>' + '<span class="nom">' + key + '</span>'
-            + '<span class="nom">' + JSON.parse(localStorage.getItem(key)).movil + '</span>' 
-            + '<span class="nom">' + JSON.parse(localStorage.getItem(key)).email + '</span>' + '</li><br>';
+            registro += '<li>' + '<span class="datos">' + key + '</span>'
+            + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).movil + '</span>' 
+            + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).email + '</span>' + '</li><br>';
         }
     }
     document.getElementById('contactos').innerHTML=registro;

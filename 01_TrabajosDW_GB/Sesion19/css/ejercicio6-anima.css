@@ -1,4 +1,8 @@
-div{
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: black;
+}
+.anim{
     background-color: #8e44ad;
     color: white;
     padding: .2rem .3rem 1rem .3rem;
@@ -58,4 +62,23 @@ div{
         top: 0;
         left: 0;
     }
+}
+.img{
+    float: right;
+    margin-top: 100px;
+}
+.pac{
+    width: 500px;
+}
+.titulo{
+    margin-top: -50px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    background: radial-gradient(#fffb02, #e24a4a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.nombre{
+    margin-top: -150px;
 }
