@@ -3,10 +3,12 @@ function guardarDato(){
     const nombre = document.getElementById("nombre").value;
     const movil = document.getElementById("movil").value;
     const email = document.getElementById("email").value;
+    const direc = document.getElementById("direc").value;
     
     const datos = {
         'movil': movil,
         'email': email,
+        'direc': direc,
     };
     //Almacenando los datos
     localStorage.setItem(nombre, JSON.stringify(datos));
@@ -14,6 +16,7 @@ function guardarDato(){
     document.getElementById("nombre").value = "";
     document.getElementById("movil").value = "";
     document.getElementById("email").value = "";
+    document.getElementById("direc").value = "";
     //actualizando lista
     actualizarDatos();
 }
@@ -23,6 +26,7 @@ function recuperarDato(){
     localStorage.getItem(nombre);
     document.getElementById("movil").value = JSON.parse(localStorage.getItem(nombre)).movil;
     document.getElementById("email").value = JSON.parse(localStorage.getItem(nombre)).email;
+    document.getElementById("direc").value = JSON.parse(localStorage.getItem(nombre)).direc;
 }
 
 function eliminarDato(){
@@ -45,7 +49,8 @@ function actualizarDatos(){
             var key = localStorage.key(i);
             registro += '<li>' + '<span class="datos">' + key + '</span>'
             + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).movil + '</span>' 
-            + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).email + '</span>' + '</li><br>';
+            + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).email + '</span>' 
+            + '<span class="datos">' + JSON.parse(localStorage.getItem(key)).direc + '</span>' + '</li><br>';
         }
     }
     document.getElementById('contactos').innerHTML=registro;
