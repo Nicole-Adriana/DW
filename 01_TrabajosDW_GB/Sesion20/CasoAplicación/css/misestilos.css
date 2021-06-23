@@ -81,5 +81,13 @@ html, body{
   }
 
   .titulo{
-    text-align: center;
+    color: black;
+  }
+  .card{
+    text-align: justify;
+  }
+  .btn-dentro:hover{
+    background-color:#fd75b3 ;
+    color: black;
+    font-style:unset;
   }
