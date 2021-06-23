@@ -70,3 +70,16 @@ html, body{
     margin: 20px;
     background-color: black;
   }
+
+  .btn-dentro{
+    border-radius: 20px;
+    background-color: #BA135D;
+    border: #BA135D;
+    padding: 5px;
+    color: white;
+    margin: 10px;
+  }
+
+  .titulo{
+    text-align: center;
+  }
