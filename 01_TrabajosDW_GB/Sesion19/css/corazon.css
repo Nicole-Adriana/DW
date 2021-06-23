@@ -66,3 +66,14 @@
       animation: animation 1600ms linear both infinite;
       margin-top: 260px;
    }
+
+   .img{
+     width: 100%;
+     position: absolute;
+     z-index: 1;
+     transform: rotate(45deg);
+     border-radius: 200px;
+     float: right;
+     margin: 20px;
+     margin-top: 0px;
+     }
