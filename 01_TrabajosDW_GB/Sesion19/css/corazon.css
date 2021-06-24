@@ -10,14 +10,23 @@
 
 .banda{
     position: absolute;
-    width: 170%;
+    width: 160%;
     height: 15%;
     background-color: white;
     top:35%;
     left:-10px;
     z-index:1;
 }
-
+.banda2{
+    position: absolute;
+    width: 160%;
+    height: 15%;
+    background-color: white;
+    top:20%;
+    left:-30px;
+    z-index:1;
+    transform: rotate(-100deg);
+}
 .corazon::before{
     left: 50%;
 }
@@ -76,4 +85,12 @@
      float: right;
      margin: 20px;
      margin-top: 0px;
+     }
+
+     body{
+        background:
+        linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+        linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+        background-color:#708090;
+        background-size: 64px 128px;
      }
